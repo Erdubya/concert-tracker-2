@@ -1,0 +1,33 @@
+{
+  "name": "concerts-symfony",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "tailwindcss": "^1.0.5"
+  },
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.27.0",
+    "@types/node": "^12.6.8",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "ts-loader": "^5.4.5",
+    "typescript": "^3.5.3",
+    "webpack-notifier": "^1.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "encore": "encore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Erdubya/concert-tracker-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Erdubya/concert-tracker-2/issues"
+  },
+  "homepage": "https://github.com/Erdubya/concert-tracker-2#readme"
+}
