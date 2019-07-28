@@ -2,7 +2,9 @@
 var Encore = require('@symfony/webpack-encore');
 
 Encore
-// the project directory where all compiled assets will be stored
+    .enableSingleRuntimeChunk()
+
+    // the project directory where all compiled assets will be stored
     .setOutputPath('public/build/')
 
     // the public path used by the web server to access the previous directory
@@ -23,8 +25,8 @@ Encore
     // show OS notifications when builds finish/fail
     .enableBuildNotifications()
 
-    // create hashed filenames (e.g. app.abc123.css)
-    // .enableVersioning()
+    // create hashed filenames (e.g. app.abc123.css) in production
+    .enableVersioning(Encore.isProduction())
 
     // TypeScript
     .enableTypeScriptLoader()
